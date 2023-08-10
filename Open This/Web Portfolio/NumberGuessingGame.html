@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Guessing Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(20, 20, 20);
+            color: rgb(126, 126, 126);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 150px;
+            background-color: rgb(43, 43, 43);
+            padding: 0 20px;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            position: absolute;
+            left: 100%;
+            animation: moveAnimation 1s ease;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes moveAnimation {
+            0% {
+                left: 100%;
+            }
+
+            100% {
+                left: 43%;
+            }
+        }
+
+
+        nav ul li {
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(201, 201, 201);
+        }
+
+        nav ul li a:active {
+            color: rgb(128, 128, 128);
+        }
+
+        .left {
+            font-size: 2.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+            margin-left: 52px;
+            position: absolute;
+            left: -27%;
+            animation: moveAnimationleft 1s ease;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes moveAnimationleft {
+            0% {
+                left: -27%;
+            }
+
+            100% {
+                left: 0%;
+            }
+        }
+
+        footer {
+            background-color: rgb(43, 43, 43);
+            color: white;
+            padding: 40px 0;
+            margin-top: 65px;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .sitemap ul {
+            list-style: none;
+        }
+
+        .sitemap li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .sitemap a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .sitemap a:hover {
+            color: rgb(201, 201, 201);
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .sitemap ul {
+            display: flex;
+            padding: 0 auto;
+            justify-content: center;
+        }
+
+        .righta {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .righta:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        .rightb {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .rightb:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        .rightc {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .rightc:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        .rightd {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .rightd:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        .righte {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .righte:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        .rightf {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .rightf:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        .rightg {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .rightg:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        .righth {
+            display: block;
+            padding: 7px 5px;
+            margin: 0 6px;
+            text-decoration: none;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #333;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .righth:hover {
+            background-color: #555;
+            opacity: 0.8;
+        }
+
+        footer {
+            background-color: rgb(43, 43, 43);
+            color: white;
+            padding: 40px 0;
+            margin-top: 48px;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .sitemap ul {
+            list-style: none;
+        }
+
+        .sitemap li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .sitemap a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .sitemap a:hover {
+            color: rgb(201, 201, 201);
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .sitemap ul {
+            display: flex;
+            padding: 0 auto;
+            justify-content: center;
+        }
+
+        h1 {
+            margin: 40px auto;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            max-width: 500px;
+            padding: 12px 90px;
+            font-size: 18px;
+            background-color: #2b2b2b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            opacity: 0.8;
+        }
+
+        .result {
+            font-weight: 500;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> <a href="index.html">Mohsin Saifi</a></div>
+            <ul>
+                <div class="righta">
+                    <li><a href="index.html">Home</a></li>
+                </div>
+                <div class="rightb">
+                    <li><a href="about.html">About</a></li>
+                </div>
+                <div class="rightc">
+                    <li><a href="/">Projects</a></li>
+                </div>
+                <div class="rightd">
+                    <li><a href="/">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h1>Number Guessing Game</h1>
+    <div class="container">
+        <div>
+            <div class="input-group">
+                <label for="guess">Enter your guess:</label>
+                <input type="number" id="guess" placeholder="Enter your guess">
+            </div>
+            <button onclick="checkGuess()">Check</button>
+            <p class="result" id="message"></p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/mohsinxaifi/" class="social-icon">
+                <img src="Images/ig.png" alt="Instagram">
+            </a>
+            <a href="https://www.upwork.com/freelancers/~017b418f626b6970f1" class="social-icon">
+                <img src="Images/up.png" alt="Upwork">
+            </a>
+            <!-- Add more social media icons here as needed -->
+        </div>
+        <div class="sitemap">
+            <ul>
+                <div class="righte">
+                    <li><a href="index.html">Home</a></li>
+                </div>
+                <div class="rightf">
+                    <li><a href="about.html">About</a></li>
+                </div>
+                <div class="rightg">
+                    <li><a href="/">Projects</a></li>
+                </div>
+                <div class="righth">
+                    <li><a href="/">Contact</a></li>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let secretNumber;
+        let attempts = 0;
+        const maxAttempts = 7;
+
+        function generateRandomNumber() {
+            secretNumber = Math.floor(Math.random() * 100) + 1;
+        }
+
+        function checkGuess() {
+            const guess = parseInt(document.getElementById("guess").value);
+            
+            if (isNaN(guess) || guess < 1 || guess > 100) {
+                document.getElementById("message").textContent = "Please enter a valid number between 1 and 100.";
+                return;
+            }
+
+            attempts++;
+
+            if (guess === secretNumber) {
+                document.getElementById("message").textContent = `Congratulations! You guessed the correct number ${secretNumber} in ${attempts} attempts.`;
+                document.getElementById("guess").disabled = true;
+            } else if (guess < secretNumber) {
+                document.getElementById("message").textContent = "Try a higher number.";
+            } else {
+                document.getElementById("message").textContent = "Try a lower number.";
+            }
+
+            if (attempts === maxAttempts) {
+                document.getElementById("message").textContent = `Sorry, you've reached the maximum attempts. The correct number was ${secretNumber}.`;
+                document.getElementById("guess").disabled = true;
+            }
+        }
+
+        function resetGame() {
+            generateRandomNumber();
+            attempts = 0;
+            document.getElementById("guess").value = "";
+            document.getElementById("message").textContent = "";
+            document.getElementById("guess").disabled = false;
+        }
+
+        window.onload = function() {
+            generateRandomNumber();
+        }
+    </script>
+</body>
+
+</html>

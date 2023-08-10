@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobeen S. | Projects</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #6e07f3;
+            font-weight: 400;
+            margin-top: 30px;
+            font-size: 20px;
+            padding: 5px 40px;
+            text-align: center;
+            border: #6e07f3 solid 2px;
+            border-radius: 50px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        h1:hover {
+            background-color: #6e07f3;
+            color: white;
+        }
+
+        h1:active {
+            background-color: #6e07f3;
+            color: white;
+        }
+
+        h2 {
+            color: black;
+            font-weight: 400;
+            margin-top: 5px;
+            font-size: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        h3 {
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+            padding-top: 140px;
+            text-align: center;
+        }
+
+        body {
+            background-color: white;
+            color: rgb(126, 126, 126);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 130px;
+            background-color: white;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            max-height: 80px;
+            margin-left: 73px;
+        }
+
+        .headerLinkA {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-left: 800px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .headerLinkB {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .headerLinkBDribble {
+            display: block;
+            font-size: 20px;
+            justify-content: center;
+            text-align: center;
+            margin-left: 554px;
+            text-decoration: none;
+            list-style: none;
+            max-height: 50px;
+        }
+
+        .headerLinkBConversation {
+            display: block;
+            font-size: 20px;
+            justify-content: center;
+            text-align: center;
+            margin-left: 515px;
+            text-decoration: none;
+            list-style: none;
+            max-height: 50px;
+        }
+
+        .headerLinkA a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            font-weight: 300;
+            transition: font-weight 0.3s ease, color 0.3s ease;
+            color: black;
+        }
+
+        .headerLinkA a:hover {
+            color: #6e07f3;
+            font-weight: 400;
+        }
+
+        .headerLinkB a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 400;
+            color: #6e07f3;
+            padding: 14px 34px;
+            border: 2px solid #6e07f3;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 53px;
+        }
+
+        .headerLinkB a:hover {
+            font-weight: 400;
+            background-color: #6e07f3;
+            color: white;
+        }
+
+        .columnH {
+            position: relative;
+            z-index: 3;
+        }
+
+        .startProject {
+            height: 166px;
+            background-color: #141c3a;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-bottom: 450px;
+            margin-top: 180px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            gap: 106px;
+
+        }
+
+        .h3startProject {
+            padding: 55px 0px;
+        }
+
+        .pstartProject {
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 50px 0;
+
+        }
+
+        .pstartProjectButton {
+            width: 188px;
+            height: 32px;
+            color: white;
+            font-size: 22px;
+            font-weight: 400;
+            padding: 10px 0;
+            margin: 48px 0;
+            border: #5be9b9 solid;
+            border-radius: 85px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .pstartProjectButton:hover {
+            background-color: #5be9b9;
+            color: #141c3a;
+        }
+
+        .columnFooter {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer {
+            height: 600px;
+            background-color: #6e07f3;
+            margin-top: -550px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .footerLogo {
+            display: flex;
+            align-items: center;
+            padding-top: 200px;
+            padding-left: 624px;
+            padding-bottom: 22px;
+            min-height: 100px;
+            min-width: 100px;
+        }
+
+        .footerIconsContainer {
+            max-height: 50px;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            gap: 30px;
+            margin-top: 47px;
+        }
+
+        .columnFooter img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .footerIcons svg {
+            fill: white;
+        }
+
+        .footerText {
+            color: white;
+            font-weight: 400;
+        }
+
+        .headingsText {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 0 auto;
+            gap: 80px;
+        }
+
+        .adCreativeColumns {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .adCreativeColumnTop {
+            text-align: center;
+            justify-content: center;
+            min-width: 1200px;
+        }
+
+        .adCreativeColumnTop img {
+            padding-top: 50px;
+            min-height: fit-content;
+            min-width: 1246px;
+        }
+
+        .adCreativeColumnA {
+            width: 400px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .adCreativeColumnB {
+            width: 400px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .adCreativeColumnC {
+            width: 400px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .menu-bar {
+            background-color: var(--color-black);
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .menu-bar ul {
+            list-style: none;
+            display: flex;
+            color: #6e07f3;
+            font-weight: 400;
+            text-align: center;
+
+        }
+
+        .menu-bar ul li {
+            /* width: 120px; */
+            padding: 10px 30px;
+            /* text-align: center; */
+
+            position: relative;
+        }
+
+        .menu-bar ul li a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .menu-bar ul li a:hover {
+            color: white;
+        }
+
+        .fas {
+            float: right;
+            margin-left: 10px;
+            padding-top: 3px;
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        .menu-bar ul li:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 70%;
+            background-color: var(--color-black);
+        }
+
+        .menu-bar ul li:hover .dropdown-menu ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .menu-bar ul li:hover .dropdown-menu ul li {
+            padding: 5px;
+        }
+
+        .dropdown-menu-1 {
+            display: none;
+        }
+
+        .dropdown-menu ul li:hover .dropdown-menu-1 {
+            display: block;
+            position: absolute;
+            left: 150px;
+            top: 0;
+            background-color: var(--color-black);
+        }
+
+        .menu-bar ul li ul li {
+            margin-left: 17px;
+            min-width: 170px;
+            background-color: #6e07f3;
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 30px;
+        }
+
+        .headerLinkA {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-left: 696px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .headerLinkBContact {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-right: 22px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .headerLinkBContact a {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 400;
+            color: #6e07f3;
+            padding: 11px 39px;
+            border: 2px solid #6e07f3;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 53px;
+        }
+
+        .headerLinkBContact a:hover {
+            font-weight: 400;
+            background-color: #6e07f3;
+            color: white;
+        }
+
+        .logoText {
+            text-decoration: none;
+            color: #6e07f3;
+            font-size: 50px;
+            font-weight: 600;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logoText">Portfolio</a>
+            <ul class="headerLinks">
+                <div class="headerLinkA">
+                    <li><a href="index.html">Projects</a></li>
+                </div>
+            </ul>
+            <ul class="headerLinkBContact">
+                <div class="headerLinkBContact">
+                    <li><a href="about.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-bar">
+        <ul>
+            <li>
+                <a href="#">
+                    <h1>Graphics</h1><i class="fas fa-caret-right"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="Projects-Emailers.html">Emailers</a></li>
+                        <li><a href="Projects-Web_Banners">Web Banners</a></li>
+                        <li><a href="Projects-Ad-Creatives.html">Ad Creatives</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="Packagings.html">
+                    <h1>Packagings</h1>
+                </a>
+            </li>
+            <li>
+                <a href="videos.html">
+                    <h1>Videos</h1>
+                </a>
+            </li>
+            <li>
+                <h1>3d</h1>
+            </li>
+        </ul>
+    </div>
+    <adCreatives>
+        <div class="adCreativeColumnTop">
+            <img src="adCreatives/0.jpg" alt="">
+        </div>
+        <div class="adCreativeColumns">
+            <div class="adCreativeColumnA">
+                <img src="adCreatives/a1.jpg" alt="">
+                <img src="adCreatives/a2.jpg" alt="">
+                <img src="adCreatives/a3.jpg" alt="">
+                <img src="adCreatives/a4.jpg" alt="">
+                <img src="adCreatives/a5.jpg" alt="">
+            </div>
+            <div class="adCreativeColumnB">
+                <img src="adCreatives/b1.jpg" alt="">
+                <img src="adCreatives/b2.jpg" alt="">
+                <img src="adCreatives/b3.jpg" alt="">
+                <img src="adCreatives/b4.jpg" alt="">
+                <img src="adCreatives/b5.jpg" alt="">
+            </div>
+            <div class="adCreativeColumnC">
+                <img src="adCreatives/c1.jpg" alt="">
+                <img src="adCreatives/c2.jpg" alt="">
+                <img src="adCreatives/c3.jpg" alt="">
+                <img src="adCreatives/c4.jpg" alt="">
+                <img src="adCreatives/c5.jpg" alt="">
+            </div>
+        </div>
+        <div class="columnH">
+            <div class="startProject">
+                <h3 class="h3startProject">Start a project</h3>
+                <p class="pstartProject">Interested in working together? We should<br>queue up a time to chat. I’ll buy
+                    the
+                    coffee.</p>
+                <p class="pstartProjectButton"><a href="Contact.html">Let's do this</a></p>
+            </div>
+        </div>
+    </adCreatives>
+    <div class="columnFooter">
+        <div class="footer">
+            <img class="footerLogo" src="logoFooter.png" alt="logo">
+            <h2 class="footerText">Living, learning, & leveling up<br>one day at a time.
+            </h2>
+            <div class="footerIconsContainer">
+                <a href="mailto:mubeenxaifi@gmail.com"> <img src="mail.png" alt="mail">
+                </a>
+                <a href="https://www.upwork.com/freelancers/~017b418f626b6970f1"><img src="up.png" alt="upwork"></a>
+                <a href="https://www.instagram.com/mubeenxaifi/?__coig_restricted=1"><img src="ig.png"
+                        alt="instagram"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
